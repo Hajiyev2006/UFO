@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slackside+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.nav_logo img {
+    width: 50px;
+    filter: drop-shadow(16px 16px 25px blue);
+    height: 50px;
+    z-index: 1;
+    margin: 30px 0 0 30px;
+    transition: transform 0.5s ease;
+}
+
+.nav_logo:hover img {
+    transform: rotatey(360deg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon_circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.nav_links ul {
+    display: flex;
+    font-family: "Slackside One", cursive;
+    align-items: center;
+    margin-left: 480px;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    margin-top: 60px;
+    background: rgb(55, 45, 227);
+    position: relative;
+    z-index: 1;
+}
+
+button::before {
+    content: "  ";
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(22, 15, 158, 1) 21%, rgba(0, 111, 255, 1) 88%);
+    margin-top: 60px;
+    background: rgb(55, 45, 227);
+    position: absolute;
+    z-index: -1;
+    right: -100%;
+    transition: 0.9s;
+}
+
+button:hover::before {
+    right: 0;
+}
+
+.fa-solid.fa-bars {
+    color: blue;
+    font-size: 24px;
+    margin: 10px 0 0 12px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    font-family: "Slackside One", cursive;
+}
+
+body {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%),
+        url("images/background.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+/* .main_page {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%),
+        url("https://images.unsplash.com/photo-1656608138197-2aea23cc3564?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.text {
+    text-align: left;
+    justify-content: baseline;
+    height: 100px;
+    color: white;
+}
+li:hover{
+    border-bottom: solid blue;
+}
+.text h1 {
+    margin-left: 185px;
+    margin-top: 150px;
+    font-family: "Slackside One", cursive;
+    font-size: 50px;
+}
+
+.text_p {
+    justify-content: left;
+    text-align: left;
+    width: 400px;
+    height: 100px;
+    font-size: 18px;
+    margin-left: 185px;
+    margin-top: 50px;
+}
+
+.text_p p {
+    font-family: "Slackside One", cursive;
+}
+
+
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 150px;
+    width: 430px;
+    gap: 30px;
+    height: 73vh;
+    color: white;
+    margin-left: 125vh;
+    margin-top: -190px;
+
+
+}
+
+.photo_1 {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_1.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    background-position: center;
+}
+
+.photo_1:hover {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_1.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -webkit-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -moz-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    border-radius: 20px;
+    background-position: center;
+    transform: translateY(-10px);
+}
+
+.photo_2 {
+    background-size: cover;
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_2.png);
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    background-position: center;
+}
+
+.photo_2:hover {
+    background-size: cover;
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_2.png);
+    width: 180px;
+    box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -webkit-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -moz-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    height: 33vh;
+    border-radius: 20px;
+    background-position: center;
+    transform: translateY(-10px);
+}
+
+.photo_3 {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_3.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    background-position: center;
+}
+
+.photo_3:hover {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_3.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -webkit-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -moz-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    border-radius: 20px;
+    background-position: center;
+    transform: translateY(-10px);
+}
+
+.photo_4 {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_4.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px -1px 12px 0px rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    background-position: center;
+}
+
+.photo_4:hover {
+    background: linear-gradient(61deg, rgba(28, 28, 29, 0.368) 0%, rgba(1, 1, 1, 0.264) 100%), url(images/photo_4.png);
+    background-size: cover;
+    width: 180px;
+    height: 33vh;
+    border-radius: 20px;
+    box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -webkit-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    -moz-box-shadow: 2px -1px 24px 5px rgba(24, 10, 244, 0.75);
+    background-position: center;
+    transform: translateY(-10px);
+}
+
+.photo_1,
+.photo_2,
+.photo_3,
+.photo_4 div {
+    padding-left: 5px;
+    padding-top: 75px;
+}
